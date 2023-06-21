@@ -1,0 +1,2116 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+% Welcome! This is the unofficial University of Udine beamer template.
+
+% See README.md for more informations about this template.
+
+% This style has been developed following the "Manuale di Stile"
+% (Style Manual) of the University of Udine. You can find the
+% manual here: https://www.uniud.it/it/ateneo-uniud/ateneo-uniud/identita-visiva/manuali-immagine-stile/manuale-stile
+
+% Note: for some reason, the RGB values specified in the manual
+% do NOT render correctly in Beamer, so they have been redefined
+% for this document using the high level chromo-optic deep neural 
+% quantistic technology offered by Microsoft Paint's color picker.
+
+% We defined four theme colors: UniBrown, UniBlue, UniGold
+% and UniOrange. For example, to write some uniud-brownish
+% text, just use: \textcolor{UniBrown}{Hello!}
+
+% Note that [usenames,dvipsnames] is MANDATORY due to compatibility
+% issues between tikz and xcolor packages.
+
+\usepackage{verbatim}
+\usetheme{uniud}
+
+%%% Bibliography
+
+
+% Author names in publication list are consistent 
+% i.e. name1 surname1, name2 surname2
+% See https://tex.stackexchange.com/questions/106914/biblatex-does-not-reverse-the-first-and-last-names-of-the-second-author
+%\DeclareNameAlias{author}{first-last}
+
+%%% Suppress biblatex annoying warning
+\usepackage{silence}
+\WarningFilter{biblatex}{Patching footnotes failed}
+
+%%% Some useful commands
+% pdf-friendly newline in links
+\newcommand{\pdfnewline}{\texorpdfstring{\newline}{ }} 
+% Fill the vertical space in a slide (to put text at the bottom)
+\newcommand{\framefill}{\vskip0pt plus 1filll}
+
+
+\title[University of Udine Unofficial Beamer Theme]{On The Explosion of Large Death Stars}
+%[May 1977]{May 25, 1977}
+\author[Luke Skywalker]{
+  Luke Skywalker, Ph.D.
+  \pdfnewline
+  \texttt{luke.skywalker@uniud.it}
+}
+\institute{Department of Physics, University of Udine}
+\end_preamble
+\options usenames,dvipsnames
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblio_style plainnat
+\biblio_options backend=biber
+\biblatex_bibstyle authoryear
+\biblatex_citestyle authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+titlepage
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Before you start
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Overleaf users
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout AlertBlock
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Warning
+\end_layout
+
+\end_inset
+
+You can ignores this slide if you're 
+\series bold
+not
+\series default
+ working with Overleaf.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ 0.5cm
+\end_layout
+
+\begin_layout Frame
+Overleaf, Beamer and Biber do not always get along well together.
+ For this reason, if you make a mistake while writing this presentation,
+ in the drop-down error message you'll 
+\series bold
+always
+\series default
+ get Biber-related error messages.
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ 0.5cm
+\end_layout
+
+\begin_layout Frame
+Luckily, you just have to click on 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+go to first error/warning
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ and the UI will scroll to the line containing your mistake.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+fragile
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+Compiling
+\end_layout
+
+\begin_layout AlertBlock
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Warning
+\end_layout
+
+\end_inset
+
+You can ignore this slide if you're working with Overleaf.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+To compile this deck you'll need the 
+\family typewriter
+biber
+\family default
+ package.
+ Probably your \SpecialChar TeX
+editor already supports it; if not, you will easily find
+ online the instructions to install it.
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ 0.5cm
+\end_layout
+
+\begin_layout Frame
+If you're not using an editor, you can compile this presentation using the
+ command line by running:
+\end_layout
+
+\begin_layout Standard
+$ pdflatex main.tex
+\end_layout
+
+\begin_layout Standard
+$ biber main.bcf
+\end_layout
+
+\begin_layout Standard
+$ pdflatex main.tex
+\end_layout
+
+\begin_layout Standard
+$ pdflatex main.tex
+\end_layout
+
+\begin_layout Section
+Colors
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Colors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+For this template we defined four colors, following the Style Manual of
+ the University of Udine: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\color white
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+marker
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+UniOrange
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\color inherit
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\color white
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+marker
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+UniBlue
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+UniBlue
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\color inherit
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\color white
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+marker
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+UniBrown
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+UniBrown
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\color inherit
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\color white
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+marker
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+UniGold
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+UniGold
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\color inherit
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ 0.5cm
+\end_layout
+
+\begin_layout Frame
+You can use these colors as you want in your presentation.
+ For example, you can 
+\series bold
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textcolor{UniGold}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+color the text in gold
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\series default
+ by writing 
+\family typewriter
+
+\backslash
+{UniGold}{my gold text}
+\family default
+.
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ 0.5cm
+\end_layout
+
+\begin_layout Frame
+We also redefined many of the most common \SpecialChar LaTeX
+ and Beamer commands, like 
+\family typewriter
+itemize
+\family default
+, 
+\family typewriter
+block
+\family default
+, etc.
+ You will see samples of these commands in the following slides.
+\end_layout
+
+\begin_layout Section
+Blocks
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+This is a page with a title and a subtitle
+\end_layout
+
+\begin_layout FrameSubtitle
+And also some blocks.
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Goal of the mission
+\end_layout
+
+\end_inset
+
+Shoot in the Death Star's exhaust port and destroy it before the it can
+ fire on the Rebel base.
+ 
+\end_layout
+
+\begin_layout AlertBlock
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Take care!
+\end_layout
+
+\end_inset
+
+TIE Fighters may chase you while approaching the target.
+ 
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Use the force you must
+\end_layout
+
+\end_inset
+
+Remember your training with Obi-Wan, and use the Force to make the perfect
+ shoot.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Enumerates, itemizes and description
+\end_layout
+
+\begin_layout Subsection
+Enumerates and itemizes
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Enumerates and itemizes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+This is an example of 
+\family typewriter
+itemize
+\family default
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A long time ago in a galaxy far, far away...
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+And this is an example of 
+\family typewriter
+enumerate
+\family default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Go to the Death Star.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Find the exhaust port.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Make the perfect shot.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Become an hero.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Description
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+fragile
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+Description
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+This is an example of 
+\family typewriter
+description
+\family default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+<2->[Vader] 
+\emph on
+I am
+\emph default
+ your father.
+ 
+\end_layout
+
+\begin_layout Description
+<1->[Luke] No.
+ No! That's not true! 
+\series bold
+That's impossible!
+\series default
+ 
+\end_layout
+
+\begin_layout Uncover
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+3
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ 0.5cm And while we're here, let's have a look to 
+\family typewriter
+verbatim
+\family default
+ as well, to see how we made items appear in arbitrary order: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ 0.5cm 
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+begin{description}
+\end_layout
+
+\begin_layout Standard
+  
+\backslash
+item<2->[This is the first item] one
+\end_layout
+
+\begin_layout Standard
+  
+\backslash
+item<1->[This is the second item] two
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+end{description}
+\end_layout
+
+\begin_layout Standard
+  
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Maths
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Maths
+\end_layout
+
+\end_inset
+
+A formula will look like this: 
+\end_layout
+
+\begin_layout Frame
+\align center
+\begin_inset Formula $x^{2}+y^{2}=z^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Frame
+You can number equations as well: 
+\begin_inset Formula 
+\begin{equation}
+1+1=2
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula 
+\begin{equation}
+1+1=2\tag{custom label!}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ 0.5cm
+\end_layout
+
+\begin_layout Frame
+If you want to use the default \SpecialChar LaTeX
+ math fonts, just go to 
+\family typewriter
+beamerfontthemeuniud.sty
+\family default
+ and uncomment the line containing `
+\family typewriter
+
+\backslash
+usefonttheme[onlymath]{serif}
+\family default
+'.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Theorems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+The usual 
+\family typewriter
+theorem
+\family default
+, 
+\family typewriter
+corollary
+\family default
+, 
+\family typewriter
+definition
+\family default
+, 
+\family typewriter
+definitions
+\family default
+, 
+\family typewriter
+fact
+\family default
+, 
+\family typewriter
+example
+\family default
+ and 
+\family typewriter
+examples
+\family default
+ blocks are available as well.
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+There exists an infinite set.
+ 
+\end_layout
+
+\begin_layout Proof
+This follows from the axiom of infinity.
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Natural Numbers
+\end_layout
+
+\end_inset
+
+The set of natural numbers is infinite.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Other blocks
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Other blocks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Here we display examples of 
+\family typewriter
+abstract
+\family default
+, 
+\family typewriter
+verse
+\family default
+, 
+\family typewriter
+quotation
+\family default
+, and 
+\family typewriter
+quote
+\family default
+.
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ 0.5cm
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{abstract}
+\end_layout
+
+\end_inset
+
+ This is an abstract.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{abstract}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Verse
+This is a verse.
+ 
+\end_layout
+
+\begin_layout Quotation
+This is a quotation.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+raggedleft
+\end_layout
+
+\end_inset
+
+ -Han Solo 
+\end_layout
+
+\begin_layout Quote
+A quote this is.
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+raggedleft
+\end_layout
+
+\end_inset
+
+ -Yoda 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Bibliography and Publications
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+fragile
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+Bibliography
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+You can cite an article 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+normally using 
+\family typewriter
+
+\backslash
+cite
+\family default
+, e.g.: () 
+\end_layout
+
+\begin_layout Itemize
+or display the full citation using 
+\family typewriter
+
+\backslash
+fullcite
+\family default
+, e.g.: 
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ 0.5cm Look at the code of the following slide to see how to automatically
+ split the bibliography on many slides.
+ You can also use 
+\family typewriter
+
+\backslash
+nocite{*}
+\family default
+ to display the non-cited publications as well.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+t,allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+Bibliography
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% will display the non-cited publications as well.
+ Useful for a publication list.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Section
+Bonus Commands
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+fragile
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+Framecard
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+You can display a frame with a colored background and a huge text in the
+ center using the command 
+\family typewriter
+
+\backslash
+framecard
+\family default
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ 0.5cm For example, you can write: 
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+framecard{A SECTION
+\backslash
+
+\backslash
+TITLE}
+\end_layout
+
+\begin_layout Subsubsection
+This will display a frame with a orange background and the phrase 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+A SECTION TITTLE
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ in the center.
+ You can also use a custom color with 
+\family typewriter
+
+\backslash
+framecard
+\family default
+: 
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+framecard{A SECTION
+\backslash
+
+\backslash
+TITLE}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+framecard[UniBlue]{A SECTION TITLE
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Standard
+WITH A CUSTOM COLOR}
+\end_layout
+
+\begin_layout Frame
+You can see the results of the commands above in the following slides.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+framecard
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+A SECTION
+\begin_inset Newline newline
+\end_inset
+
+TITLE
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+framecard
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+UniBlue
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+A SECTION TITLE
+\begin_inset Newline newline
+\end_inset
+
+WITH A CUSTOM COLOR
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+fragile
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+Framepic
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+You can display a frame with a background image using the command 
+\family typewriter
+
+\backslash
+framepic
+\family default
+.
+ The image will be 
+\series bold
+adapted vertically
+\series default
+ to fit the the frame.
+\end_layout
+
+\begin_layout Frame
+For example, you can write: 
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+framepic{graphics/darth}{
+\end_layout
+
+\begin_layout Standard
+	
+\backslash
+framefill
+\end_layout
+
+\begin_layout Standard
+    
+\backslash
+textcolor{white}{Luke,
+\backslash
+
+\backslash
+I am your supervisor}
+\end_layout
+
+\begin_layout Standard
+    
+\backslash
+vskip 0.5cm
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Frame
+Alternatively, to make the background 50% transparent, you can write 
+\family typewriter
+
+\backslash
+framepic[0.5]{graphics/darth}...
+\end_layout
+
+\begin_layout Frame
+You can see the results of the commands above in the following slides.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+framepic
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+graphics/darth
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+framefill
+\end_layout
+
+\end_inset
+
+ 
+\color white
+Luke,
+\begin_inset Newline newline
+\end_inset
+
+I am your supervisor
+\color inherit
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ 0.5cm 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+framepic
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+0.5
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+graphics/darth
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\series bold
+\color red
+Right-aligned text with
+\begin_inset Newline newline
+\end_inset
+
+Semi-transparent background
+\series default
+\color inherit
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+t,fragile,allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+Other bonus commands
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+We provide two other bonus commands: 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
+\family typewriter
+pdfnewline
+\family default
+ you can use 
+\family typewriter
+
+\backslash
+pdfnewline
+\family default
+ to avoid the annoying 
+\family typewriter
+hyperref
+\family default
+ related warnings when using newlines in the document's title, author, etc.
+ For example, in this presentation the author is defined as: 
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+author[Luke Skywalker]{
+\end_layout
+
+\begin_layout Standard
+  Luke Skywalker, Ph.D.
+\end_layout
+
+\begin_layout Standard
+  
+\backslash
+pdfnewline
+\end_layout
+
+\begin_layout Standard
+  
+\backslash
+texttt{luke.skywalker@uniud.it}
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+marker
+\family default
+ you can use 
+\family typewriter
+
+\backslash
+marker
+\family default
+ to highlight some text.
+ The default color is 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+marker
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+orange
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+, but you can also 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+marker
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+UniBlue
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+use a custom color
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+.
+ For example: 
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+marker{Default color}
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+marker[UniBlue]{Custom Color}
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+framefill
+\family default
+ you can use 
+\family typewriter
+
+\backslash
+framefill
+\family default
+ to put the text at the bottom of a slide by filling all the vertical space.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bibliography"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
